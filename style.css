@@ -30,9 +30,10 @@ html {
   height: 1530px;
   width: 375px;
   background-color: hsl(0deg, 0%, 100%);
-  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top, bottom;
   padding: 70px 25px 100px 25px;
 }
 
@@ -127,3 +128,78 @@ html {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media only screen and (min-width: 1440px) {
+  .container_card {
+    height: 800px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 140px 160px 100px 160px;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  .header_part {
+    gap: 135px;
+    margin-bottom: 40px;
+  }
+  .opinions_buyers {
+    gap: 30px;
+  }
+  .header_part,
+  .opinions_buyers {
+    display: flex;
+    flex-direction: row;
+  }
+  .main_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* width: 440px;
+    height: 240px; */
+  }
+  .main_text > p,
+  .main_text > h1 {
+    text-align: left;
+  }
+  .raiting_reviews {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .container_review,
+  .container_guru,
+  .container_tech {
+    display: flex;
+    flex-direction: row;
+    width: 440px;
+    height: 60px;
+    justify-content: left;
+    padding-left: 35px;
+    padding-top: 17px;
+    column-gap: 25px;
+  }
+  .container_irene,
+  .container_anne,
+  .container_colton {
+    width: 350px;
+    height: 235px;
+  }
+  .container_review {
+    margin-left: 15px;
+  }
+  .container_guru {
+    margin-left: 65px;
+  }
+  .container_tech {
+    margin-left: 115px;
+  }
+  .container_irene {
+    margin-top: 15px;
+  }
+  .container_anne {
+    margin-top: 30px;
+  }
+}
